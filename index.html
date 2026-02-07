@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Starmania</title>
+    <link rel="dns-prefetch" href="//telegram.org" />
+    <link rel="dns-prefetch" href="//mc.yandex.com" />
+    <link rel="dns-prefetch" href="//storage.portal-market.com" />
+    <link rel="preconnect" href="https://telegram.org" crossorigin />
+    <link rel="preconnect" href="https://mc.yandex.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://storage.portal-market.com"
+      crossorigin
+    />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const { WebApp } = window.Telegram;
+
+        WebApp.disableVerticalSwipes();
+        WebApp.lockOrientation();
+        WebApp.enableClosingConfirmation();
+
+        WebApp.setHeaderColor("#060d1f");
+        WebApp.setBackgroundColor("#060d1f");
+        WebApp.setBottomBarColor("#060d1f");
+
+        WebApp.BackButton.hide();
+
+        if (
+          !WebApp.isFullscreen &&
+          /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent,
+          )
+        ) {
+          WebApp.requestFullscreen();
+        }
+
+        WebApp.ready();
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-DfVasHcl.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DMaK_K7k.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
