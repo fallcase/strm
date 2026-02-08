@@ -9,16 +9,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Starmania</title>
     <link rel="dns-prefetch" href="//telegram.org" />
+    <link rel="dns-prefetch" href="//richinfo.co" />
     <link rel="dns-prefetch" href="//mc.yandex.com" />
     <link rel="dns-prefetch" href="//storage.portal-market.com" />
     <link rel="preconnect" href="https://telegram.org" crossorigin />
     <link rel="preconnect" href="https://mc.yandex.com" crossorigin />
+    <link rel="preconnect" href="https://richinfo.co" crossorigin />
     <link
       rel="preconnect"
       href="https://storage.portal-market.com"
       crossorigin
     />
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://richinfo.co/richpartners/telegram/js/tg-ob.js"></script>
+    <script>
+      window.TelegramAdsController = new TelegramAdsController();
+
+      window.TelegramAdsController.initialize({
+        pubId: "998489",
+        appId: "6055",
+      });
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const { WebApp } = window.Telegram;
@@ -45,8 +56,8 @@
         WebApp.ready();
       });
     </script>
-    <script type="module" crossorigin src="/assets/index-CwEV_tFq.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BbYsOzmh.css">
+    <script type="module" crossorigin src="/assets/index-Dd9B2usl.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-pFiN1Jwm.css">
   </head>
   <body>
     <div id="root"></div>
